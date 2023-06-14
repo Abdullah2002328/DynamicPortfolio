@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <style>
+    .center-text {
+      text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5 center-text">Fill-Out The Form To Generate Your CV</h1>
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">I'm a:</label>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" name="i1" required placeholder="Youtuber">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" name="i2" required placeholder="Blogger">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" name="i3" required placeholder="Foodie">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name">Short Description:</label>
+        <input type="text" class="form-control" name="dis" required>
+      </div>
+      <div class="form-group">
+        <label for="name">About Me:</label>
+        <input type="text" class="form-control" name="about" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Skills:</label>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" name="s1" required placeholder="HTML">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" name="s2" required placeholder="CSS">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" name="s3" required placeholder="Javascript">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Skills Percentage:</label>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" name="sp1" required placeholder="90%">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" name="sp2" required placeholder="70%">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" name="sp3" required placeholder="85%">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Previous Projects:</label>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" name="pp1" required placeholder="Facebook">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" name="pp2" required placeholder="Google">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" name="pp3" required placeholder="Twitter">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name">Picture:</label>
+        <input type="file" class="form-control-file" name="image" accept="image/png" required>
+      </div class="form-group text-center">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
+</body>
+</html>
